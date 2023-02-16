@@ -10,6 +10,7 @@ public class Program
             .ConfigureServices(services =>
             {
                 services.AddSingleton<IAuthorizationPolicyProvider, JwtPolicyProvider>();
+                services.AddSingleton<IAuthorizationPolicyProvider, JwtPolicyProvider2>();
             }).Build();
     }
 }

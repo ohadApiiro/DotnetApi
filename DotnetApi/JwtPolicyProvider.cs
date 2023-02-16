@@ -19,3 +19,21 @@ public class JwtPolicyProvider : IAuthorizationPolicyProvider
         throw new NotImplementedException();
     }
 }
+
+public class JwtPolicyProvider2 : IAuthorizationPolicyProvider
+{
+    public Task<AuthorizationPolicy?> GetPolicyAsync(string policyName)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<AuthorizationPolicy> GetDefaultPolicyAsync()
+    {
+        throw new NotImplementedException();
+    }
+
+    public Task<AuthorizationPolicy?> GetFallbackPolicyAsync()
+    {
+        throw new NotImplementedException();
+    }
+}
